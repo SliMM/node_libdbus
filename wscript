@@ -36,9 +36,9 @@ def configure(conf):
 def post_build(ctx):
   #print("=== post")
   if not os.path.exists('lib/binding.node'):
-      os.symlink( '../build/default/binding.node', 'lib/binding.node')
+      os.symlink( '../build/Release/binding.node', 'lib/binding.node')
   if not os.path.exists('lib/tests.node'):
-      os.symlink( '../build/default/tests.node', 'lib/tests.node')
+      os.symlink( '../build/Release/tests.node', 'lib/tests.node')
 
 def build(bld):
   bld.add_post_fun(post_build)

@@ -1,4 +1,4 @@
-{ "name" : "dbus"
+{ "name" : "libdbus"
 , "version" : "0.0.1-alpha"
 , "description" : "DBus RPC add-on"
 , "author": "David Siegel <david@artcom.de>"
